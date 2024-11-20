@@ -22,10 +22,12 @@ x <- seq(min(ds2$Pop_Density), max(ds2$Pop_Density), length = 100)
 y <- dnorm(x, mean = mean(ds2$Pop_Density), sd = sd(ds2$Pop_Density)) * length(ds2$Pop_Density)
 box.size <- diff(h$mids[1:2])
 y <- y * box.size
-lines(x, y, col = "red") # in hist(), 'breaks' = number of bars in graph
+lines(x, y, col = "red") 
 h <- hist(ds2$Avg_House_Price, breaks = 10, xlab = "Median House Price (£)", ylab = "Frequency", main = "Histogram of Median House Price")
 x <- seq(min(ds2$Avg_House_Price), max(ds2$Avg_House_Price), length = 100)
 y <- dnorm(x, mean = mean(ds2$Avg_House_Price), sd = sd(ds2$Avg_House_Price)) * length(ds2$Avg_House_Price)
 box.size <- diff(h$mids[1:2])
 y <- y * box.size
 lines(x, y, col = "red")
+# in hist(), 'breaks' = number of bars in graph
+# frequency (y axis) represents the number of boroughs with that x value / range of x values
