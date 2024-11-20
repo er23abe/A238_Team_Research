@@ -72,7 +72,8 @@ wilcox.test(ds2$Avg_House_Price ~ ds2$Location) # for non-parametric data. Has t
 ## a test to see if "for randomly selected values X and Y from two populations, the probability of X being greater than Y is equal to the probability of Y being greater than X."
 
 # comment multiple lines at once by highlighting text, then ctrl + shift + C. using https://www.statology.org/r-multiline-comment/
-# info on tests using https://en.wikipedia.org/wiki/Welch's_t-test
+# info on tests using https://en.wikipedia.org/wiki/Welch's_t-test and https://en.wikipedia.org/wiki/Mann–Whitney_U_test
+
 # correlation test
 cor.test(ds2$Pop_Density, ds2$Avg_House_Price)
 # Pearson's product-moment correlation
