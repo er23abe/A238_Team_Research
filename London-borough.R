@@ -21,6 +21,7 @@ filtered_london_Borough_clean$Median.House.Price..2014 <-
 filtered_london_Borough_clean$Median.House.Price..2014 <- as.numeric(filtered_london_Borough_clean$Median.House.Price..2014)
 filtered_london_Borough_clean$Population.density..per.hectare..2016 <- as.numeric(filtered_london_Borough_clean$Population.density..per.hectare..2016)
 
+head(dataset,2)
 head(filtered_london_Borough_clean,2)
 
 ###########Visualization##########
